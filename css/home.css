@@ -1,0 +1,98 @@
+@import url("https://use.typekit.net/xuu1wgh.css");
+
+/* Global */
+body {
+    background-color: #111111;
+    color: #fff2df;
+    text-transform: uppercase;
+}
+
+/* Image */
+img {
+    width: 500px;
+}
+
+/* Parent Grid Layout */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Grid Areas */
+.concept {
+    grid-area: 1 / 1 / 4 / 2;
+}
+
+.illustration {
+    grid-area: 1 / 2 / 4 / 3;
+}
+
+.chance {
+    grid-area: 1 / 3 / 4 / 4;
+}
+
+/* Text Sections */
+.concept, .chance {
+    font-family: "tablet-gothic", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2vh;
+    letter-spacing: 3px;
+    text-align: justify;
+    text-align-last: left;
+    line-height: 35px;
+}
+
+/* Button Styles */
+button {
+    appearance: none;
+    background-color: #fff2df;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    color: #111111;
+    cursor: pointer;
+    font-family: "bebas-neue", sans-serif;
+    font-weight: 400;
+    font-size: 10vh;
+    text-align: center;
+    padding: 16px 24px;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+}
+
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* Headings */
+h1 {
+    font-family: "bebas-neue", sans-serif;
+    font-weight: 400;
+    font-size: 15vh;
+    text-align: center;
+    letter-spacing: 20px;
+}
+
+h2 {
+    font-family: "tablet-gothic-condensed", sans-serif;
+    font-weight: 200;
+    font-size: 3.7vh;
+    text-align: center;
+    line-height: normal;
+    letter-spacing: normal;
+}

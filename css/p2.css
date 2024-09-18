@@ -1,0 +1,139 @@
+@import url("https://use.typekit.net/xuu1wgh.css");
+
+/* Global */
+body {
+    background-color: #1A1A1A;
+    color: #fff2df;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links */
+a {
+    font-family: "bebas-neue-pro-expanded", sans-serif;
+    font-weight: 100;
+    font-size: 2vh;
+    text-align: center;
+    text-decoration: underline;
+    color: #fff2df;
+    letter-spacing: 5px;
+    display: block;
+    margin-top: 20px;
+}
+
+/* Grid Layout */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+    padding: 0 60px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Headings */
+h1, h2 {
+    font-family: "bebas-neue", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 20px;
+    margin: 0;
+    grid-column: 1 / 4;
+}
+
+h1 {
+    font-size: 15vh;
+}
+
+h2 {
+    font-size: 10vh;
+    margin: 10px 0;
+}
+
+/* Info Section */
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "tablet-gothic", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.6vh;
+    letter-spacing: 3px;
+    text-align: justify;
+    line-height: 35px;
+}
+
+/* Button Styles */
+button {
+    appearance: none;
+    background-color: #fff2df;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    color: #111111;
+    cursor: pointer;
+    font-family: "bebas-neue", sans-serif;
+    font-weight: 400;
+    font-size: 4vh;
+    padding: 10px 16px;
+    margin-top: 20px;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2 / 3;
+}
+
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* Yin and Yang Sections */
+.Yin,
+.Yang {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+}
+
+.Yin {
+    grid-column: 1 / 2;
+}
+
+.Yang {
+    grid-column: 3 / 4;
+}
+
+/* Dot Styles */
+.dot {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    mix-blend-mode: difference;
+}
+
+.Yin .dot {
+    background-color: #1A1A1A;
+}
+
+.Yang .dot {
+    background-color: #fff2df;
+}
